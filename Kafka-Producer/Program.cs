@@ -3,17 +3,17 @@ using Confluent.Kafka.Admin;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-string TheNewTopic = "";
+string TheNewTopic = "ZapFitness";
 
-a1:
+//a1:
 
-Console.Write("What topic to use?");
-TheNewTopic = Console.ReadLine();
+//Console.Write("What topic to use?");
+//TheNewTopic = Console.ReadLine();
 
-if (TheNewTopic == "" || TheNewTopic == null)
-{
-    goto a1;
-}
+//if (TheNewTopic == "" || TheNewTopic == null)
+//{
+//    goto a1;
+//}
 
 var config = new ProducerConfig 
 { 
