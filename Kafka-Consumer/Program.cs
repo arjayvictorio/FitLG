@@ -38,7 +38,7 @@ try
         if (response.Message!=null)
         {
             var weather = JsonSerializer.Deserialize<Weather>(response.Message.Value);
-            Console.WriteLine($"City: {weather.State}, Temp: {weather.Temparature}F");
+            Console.WriteLine($"City: {weather.State}, Temp: {weather.Temperature}F");
         }
     }
 }
@@ -48,4 +48,4 @@ catch (Exception)
 	throw;
 }
 
-public record Weather(string State, int Temparature);
+public record Weather(string State, int Temperature);
